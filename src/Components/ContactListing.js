@@ -27,7 +27,7 @@ function ContactListing() {
     };
 
     useEffect(() => {
-        fetch("http://localhost:8000/contacts")
+        fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/")
             .then((res) => {
                 return res.json();
             })
