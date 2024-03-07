@@ -18,7 +18,7 @@ function ContactEdit() {
   const HandleSubmit = (e) => {
     e.preventDefault();
     const contdata = {id, name, email, phone, isActive };
-    fetch("http://localhost:8000/contacts/" + contid, {
+    fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/" + contid, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -37,7 +37,7 @@ function ContactEdit() {
   
 
   useEffect(() => {
-    fetch("http://localhost:8000/contacts/" + contid)
+    fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/" + contid)
       .then((res) => {
         return res.json();
       })

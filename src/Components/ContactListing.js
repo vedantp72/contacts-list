@@ -13,7 +13,7 @@ function ContactListing() {
     };
     const DeleteDetails = (id) => {
         if (window.confirm("Are you sure?\n you want to delete this record!")) {
-            fetch("http://localhost:8000/contacts/" + id, {
+            fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/" + id, {
                 method: "DELETE",
             })
                 .then((res) => {

@@ -19,7 +19,7 @@ function ContactCreate() {
         const contdata = { name, email, phone, isActive };
         // console.log(id, name, email, phone, isActive);
 
-        fetch("http://localhost:8000/contacts", {
+        fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function ContactCreate() {
             });
     };
     const VerifyId = () => {
-        fetch("http://localhost:8000/contacts/" + id)
+        fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/" + id)
             .then((res) => {
                 return res.json();
             })

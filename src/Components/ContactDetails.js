@@ -6,7 +6,7 @@ function ContactDetails() {
   const [contdata, setContData] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8000/contacts/" + contid)
+    fetch("https://contactapi-cqjo.onrender.com/contacts-list-api/" + contid)
       .then((res) => {
         return res.json();
       })
