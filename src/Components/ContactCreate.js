@@ -55,9 +55,9 @@ function ContactCreate() {
     }
 
     return (
-        <div className="container mt-1">
+        <div className="container-fluid mt-1">
                 <h4 className="text-center">Create New Contact</h4>
-            <form className="form-control" action="" onSubmit={HandleSubmit}>
+            <form className="form-control w-25" action="" onSubmit={HandleSubmit}>
                 <dl className="">
                     <dt>ID</dt>
                     <dd>
