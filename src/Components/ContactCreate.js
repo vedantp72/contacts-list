@@ -55,14 +55,14 @@ function ContactCreate() {
     }
 
     return (
-        <div className="container-fluid mt-1">
-                <h4>Create New Contact</h4>
-            <form action="" onSubmit={HandleSubmit}>
-                <dl className=" w-50">
+        <div className="container mt-1">
+                <h4 className="text-center">Create New Contact</h4>
+            <form className="form-control" action="" onSubmit={HandleSubmit}>
+                <dl className="">
                     <dt>ID</dt>
                     <dd>
                         <input
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="text"
                             value={id}
                             disabled="disabled"
@@ -75,7 +75,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="text"
                             onBlur={(e) => setValidate(true)}
                             value={name}
@@ -89,7 +89,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -99,7 +99,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2 "
                             type="text"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
@@ -116,7 +116,7 @@ function ContactCreate() {
                             onChange={(e) => setIsActive(e.target.checked)}
                         />
                     </dd>
-                    <button className="mt-2 w-25 btn btn-primary" type="submit">Submit</button>
+                    <button className="mt-2 btn btn-primary" type="submit">Submit</button>
                     <Link to="/" className="mt-2 mx-2 btn btn-danger">
                         Cancel
                     </Link>

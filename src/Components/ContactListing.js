@@ -40,8 +40,8 @@ function ContactListing() {
     }, []);
     return (
         <div className="container-fluid">
-            <div className="card">
-                <div className="card-title App">
+            <div>
+                <div className="card-title text-center">
                     <h3>Employee Listing</h3>
                 </div>
                 <div className="card-body">
@@ -55,8 +55,8 @@ function ContactListing() {
                         </Link>
                     </div>
                     <table className="table table-bordered table-hover">
-                        <thead className="bg-dark text-white">
-                            <tr className="text-center text-danger">
+                        <thead className="">
+                            <tr className="text-center ">
                                 <td>ID</td>
                                 <td>Name</td>
                                 <td>Email</td>
